@@ -1,3 +1,5 @@
+package P2022_12_06_HW2.src;
+
 public class Student {
     //Реализовать класс Student с полями имя, количество пропущенных занятий.
 
