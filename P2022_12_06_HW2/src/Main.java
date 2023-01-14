@@ -1,4 +1,3 @@
-package P2022_12_06_HW2.src;
 
 // 1
 //Реализовать класс Student с полями имя, количество пропущенных занятий.
@@ -23,6 +22,7 @@ public class Main {
         System.out.println( "__________________________________");
 
         group1.getStudent(0).setRate(new double[] {7, 7, 7, 7});
+        group1.getStudent(1).setRate(new double[] {6, 6, 7.1, 3.7});
         System.out.println(group1);
     }
 }
