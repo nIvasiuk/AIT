@@ -22,7 +22,8 @@ public class Main {
         System.out.println( "__________________________________");
 
         group1.getStudent(0).setRate(new double[] {7, 7, 7, 7});
-        group1.getStudent(1).setRate(new double[] {6, 6, 7.1, 3.7});
+        group1.getStudent(1).setRate(new double[] {6, 6, 4.1, 4.7});
+        group1.getStudent(2).setRate(new double[] {3, 4, 3.1, 4.7});
         System.out.println(group1);
     }
 }
