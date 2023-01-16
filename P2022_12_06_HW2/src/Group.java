@@ -6,7 +6,7 @@
 
 // Реализовать в программе возможность получить имя самого успевающего (по среднему балу) студента.
 
-import java.util.Arrays;
+
 
 public class Group {
 
@@ -30,6 +30,18 @@ public class Group {
             return null;
         }
     }
+
+    public Student getBestStudent(){
+        Student best = array[0];
+        for (int i = 0; i < size; i++) {
+            if (best.averegeGrade() < array[i].averegeGrade()) {
+                best = array[i];
+            }
+        }
+        return best;
+    }
+
+
 
     @Override
     public String toString() {
