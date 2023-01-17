@@ -19,6 +19,10 @@ public class Student {
         this.rate = rate;
     }
 
+    public String getName(){
+        return name;
+    }
+
     public double averegeGrade (){
         double sum = 0;
         double res = 0;

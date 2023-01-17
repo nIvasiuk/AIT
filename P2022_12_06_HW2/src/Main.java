@@ -8,6 +8,10 @@
 //2*
 //Добавить в класс Student поле-массив с оценками (double[] rate).
 // Реализовать в программе возможность получить имя самого успевающего (по среднему балу) студента.
+
+// Реализовать класс Group метод, который ищет в группе студента с заданным именем.
+
+
 public class Main {
     public static void main(String[] args) {
 
@@ -38,7 +42,8 @@ public class Main {
         System.out.println(group1.getStudent(1).averegeGrade());
 
         System.out.println(group1.getBestStudent());
-
+        System.out.println("__________________________");
+        System.out.println(group1.getStudentByName("Inga"));
 
 
     }
