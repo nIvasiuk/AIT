@@ -1,4 +1,4 @@
-public class Figure {
+public abstract class Figure {
     String name;
 
     public Figure(String name){
