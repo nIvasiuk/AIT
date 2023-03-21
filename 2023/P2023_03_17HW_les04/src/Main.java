@@ -25,7 +25,7 @@ public class Main {
         System.out.println("Type your sex: ");
         String sex = scanner.nextLine();
 
-        System.out.println("Type nuber of your kids: ");
+        System.out.println("Type number of your kids: ");
         int numberOfKids = scanner.nextInt();
 
         System.out.println("Type your monthly income: ");
