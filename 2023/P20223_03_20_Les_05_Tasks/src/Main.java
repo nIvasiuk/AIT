@@ -9,6 +9,5 @@ public class Main {
 
         double sideOfSquare =  Math.sqrt(areaOfSquare);
         System.out.println("Сторона квадрата равна " + Math.ceil(sideOfSquare) + " см.");
-
     }
 }
