@@ -60,7 +60,29 @@ public class Main {
                 "\n" + usersWord.charAt(usersWord.length()-2) +
                 "\n" + usersWord.charAt(usersWord.length()-1));
 
+        /* 4*
+Напишите программу, которая просит пользоввателя ввести строку,
+после чего выводит на экран, введенную строку, в две строчки (причем строчки должны быть равны,
+или вторая строчка может быть короче на 1 символ). Например, ввели "Java современный язык программирования !", тогда:
 
+Java современный язы
+к программирования!
+* в рамках данной задачи преддполагается, что пользователь вводит слово длиннее 3 символов.
+         */
+
+        System.out.println("\n------------Task 4: ------------");
+        System.out.println("Введите строку: ");
+        scanner.nextLine(); // фикс - чтобы не съедалась строка
+
+        String usersString = scanner.nextLine();
+        System.out.println("Ваша строчка: " + usersString + ", кол. символов: " + usersString.length());
+
+        String firstPart = usersString.substring(0, usersString.length()/2);
+        String secondPart = usersString.substring(usersString.length()/2);
+
+        System.out.println("\nРезультат: " +
+                "\n" + firstPart +
+                "\n" + secondPart);
 
 
     }
