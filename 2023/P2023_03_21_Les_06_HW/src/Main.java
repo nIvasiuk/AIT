@@ -43,6 +43,25 @@ public class Main {
                 "\n" + usersWord.charAt(2) +
                 "\n" + usersWord.substring(3));
 
+/*   3
+Задача аналогичная предыдущей, но сначаловыводится часть строки без последних 3х символов,
+а потом выводятся последние три символла строки в столбик. Например ввели слово "Програмирование";
+
+Програмирова
+н
+и
+е
+* в рамках данной задачи преддполагается, что пользователь вводит слово длиннее 3 символов.
+        */
+
+        System.out.println("\n------------Task 3: ------------");
+        System.out.println(usersWord.substring(0,usersWord.length()-3) +
+                "\n" + usersWord.charAt(usersWord.length()-3) +
+                "\n" + usersWord.charAt(usersWord.length()-2) +
+                "\n" + usersWord.charAt(usersWord.length()-1));
+
+
+
 
     }
 }
