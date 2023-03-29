@@ -28,7 +28,7 @@ public class Main {
 
         if (drinkOne.equals("vodka") || drinkTwo.equals("vodka") || drinkTree.equals("vodka")){
             System.out.println("Не стоило этого делать, не помню, что произошло дальше");
-        } else if ((drinkOne.equals("wine") && drinkTwo.equals("beer")) ||  (drinkOne.equals("wine") && drinkTwo.equals("beer"))
+        } else if ((drinkOne.equals("wine") && drinkTwo.equals("beer")) ||  (drinkTwo.equals("wine") && drinkTree.equals("beer"))
                 || (drinkOne.equals("wine") && drinkTree.equals("beer"))  ){
             System.out.println("Ох, не стоило понижать градус");
         } else {
