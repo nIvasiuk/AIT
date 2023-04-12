@@ -24,24 +24,7 @@ S = π × r2
 - если ответ на второй вопрос: да - выводит "Так держать"
 - если ответ на второй вопрос любой другой - выводит "Не кисни!"
          */
-        System.out.println("------------- Task 2 ---------------");
-        Scanner scanner = new Scanner(System.in);
-        System.out.println("Как настроение? ");
-        String answer = scanner.nextLine();
 
-        if (answer.equalsIgnoreCase("хорошо")){
-            System.out.println("Рад за тебя");
-        }else {
-            System.out.println("Но ты же оптимистично настроен? ");
-            String answerTwo = scanner.nextLine();
-            if (answerTwo.equalsIgnoreCase("да")) {
-                System.out.println("Так держать");
-            } else {
-                System.out.println("Не кисни!");
-            }
-
-
-        }
 
 
     }
