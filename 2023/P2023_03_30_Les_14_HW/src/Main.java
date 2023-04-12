@@ -1,13 +1,15 @@
 public class Main {
     public static void main(String[] args) {
         System.out.println("******** Task 1 *************");
-        printEverySevenNumber();
+       // printEverySevenNumber();
 
         System.out.println("\n******** Task 2 *************");
-        printMultipliedByTwo();
+       // printMultipliedByTwo();
 
         System.out.println("\n******** Task 3 *************");
-        printKantSpeaking();
+        //printKantSpeaking();
+
+        printKantSpeaking2();
 
     }
       /*
@@ -63,5 +65,21 @@ public class Main {
         }
     }
 
+    public static void printKantSpeaking2() {
+        int i = 1;
+        while (i <= 300) {
+            System.out.println(kantsStep(i));
+            i++;
+        }
+            }
 
+    public static String kantsStep(int i) {
+        if (i % 6 == 0) {
+            return "Himmel und Erde";
+        } else if (i == 100) {
+            return "Sagen Sie mir, kann man in Ihrem Land durch Null teilen?";
+        }
+return String.valueOf(i);
+
+    }
 }
