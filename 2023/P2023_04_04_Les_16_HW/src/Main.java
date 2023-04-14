@@ -63,8 +63,8 @@ substring("Java is the best", 8, 8) -> ""
 
             // перебираем строку
 
-            for (int i = index1; (i < text.length()) && (i < index2); i++) {
-
+            for (int i = index1; i < index2; i++) {
+// for (int i = index1; i < index2; i++) {
 
                 res += text.charAt(i);
             }
