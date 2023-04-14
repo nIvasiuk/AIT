@@ -56,7 +56,7 @@ substring("Java is the best", 8, 8) -> ""
 
         // сперва проверяем
 
-        if (index2 <= index1 || index1 > text.length() || index2 > text.length()) {
+        if (index2 <= index1 || index1 > 0 || index2 > text.length()) {
             return res;
         } else {
 
