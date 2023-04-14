@@ -13,7 +13,7 @@ public class Main {
         System.out.println(substring("Java is the best", 1, 60));
         System.out.println(substring("Java is the best", 8, 8));
         System.out.println(substring("Java is the best", 5, 8));
-
+        System.out.println(substring("Java is the best", -1, 8));
     }
         /*
     Задание 1
@@ -56,7 +56,7 @@ substring("Java is the best", 8, 8) -> ""
 
         // сперва проверяем
 
-        if (index2 <= index1 || index1 > 0 || index2 > text.length()) {
+        if (index2 <= index1 || index1 < 0 || index2 >= text.length()) {
             return res;
         } else {
 
