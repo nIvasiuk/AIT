@@ -12,6 +12,7 @@ public class Main {
         System.out.println(substring("Java is the best", 1, 6));
         System.out.println(substring("Java is the best", 1, 60));
         System.out.println(substring("Java is the best", 8, 8));
+        System.out.println(substring("Java is the best", 5, 8));
 
     }
         /*
@@ -52,12 +53,12 @@ substring("Java is the best", 8, 8) -> ""
 
     public static String substring(String text, int index1, int index2) {
         String res = "";
-        for (int i = 0; (i < text.length()) && (i < index2); i++) {
+        for (int i = index1; (i < text.length()) && (i < index2); i++) {
 
             if (index2 <= index1 || index1 > text.length() || index2 > text.length()) {
-                return res;
+                return res = "";
             }
-            res += text.charAt(i);
+            res +=  text.charAt(i);
         }
 
         return res;
