@@ -4,6 +4,9 @@ public class Task3 {
         System.out.println(getSumOfArraysNumbers(new int[]{1, 2, 3}));
         System.out.println();
         System.out.println(getSumOfNumberDivByThreeAndFive(new int[] {15,9,1,30,5}));
+        System.out.println();
+        System.out.println(getMaxNumber(new int[] {15,9,1,30,5}));
+        System.out.println(getMaxNumber(new int[] {-15,6,1,0,-5}));
     }
 
     /*
@@ -36,5 +39,22 @@ public class Task3 {
         }
         return res;
     }
+
+    /*
+    5
+Напишите метод, который возвращает самое большое число из заданного массива целых чисел.
+{15,9,1,30,5} -> 30
+{-15,6,1,0,-5} -> 6
+     */
+
+   public static int getMaxNumber (int [] array){
+       int res = array[0];
+       for (int i = 0; i < array.length; i++) {
+           if (array[i]>=res) {
+               res = array[i];
+           }
+       }
+       return res;
+   }
 
 }
