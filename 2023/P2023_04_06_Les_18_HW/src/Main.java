@@ -19,12 +19,11 @@ public class Main {
 второй, который печатает только четные элементы массива
          */
 
-        printArray(createArray(4, 5));
-        System.out.println("******************");
-        printArray(doubleArray(createArray(4, 5)));
+        //  printArray(createArray(4, 5));
+        //  System.out.println("******************");
+        // printArray(doubleArray(createArray(4, 5)));
+        //  System.out.println("*******************");
 
-
-        System.out.println("*******************");
         createAndPrintArray();
     }
 
@@ -59,24 +58,26 @@ public class Main {
         int start = scanner.nextInt();
         return start;
     }
+
     public static void printArray(int[] array) {
         for (int i = 0; i < array.length; i++) {
             System.out.printf("index %d - %d%n", i, array[i]);
         }
     }
 
-    public static void printArrayFromLastToFirst(int [] array){   // печатает массив, начиная с последнего элемента к первому
-        for (int i = array.length-1; i >= 0 ; i--) {
+    public static void printArrayFromLastToFirst(int[] array) {   // печатает массив, начиная с последнего элемента к первому
+        for (int i = array.length - 1; i >= 0; i--) {
             System.out.printf("index %d - %d%n", i, array[i]);
         }
     }
 
-public static void printArrayOddIndexes(int [] array){  // печатает только четные элементы массива
-    for (int i = 0; i < array.length; i = i+2) {
-        System.out.printf("index %d - %d%n", i, array[i]);
+    public static void printArrayOddIndexes(int[] array) {  // печатает только четные элементы массива
+        for (int i = 0; i < array.length; i = i + 2) {
+            System.out.printf("index %d - %d%n", i, array[i]);
+        }
+
     }
 
-}
     public static int[] createArray(int capacity, int start) {
         int[] array = new int[capacity];
         for (int i = 0; i < capacity; i++) {
