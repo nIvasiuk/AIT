@@ -11,6 +11,12 @@ public class Main {
 Напишите метод вывода массива на экран
 Ваша программа должна запрашивать у пользователя размер массива и начальное число,
 выводить на экран исходный массив, затем выводить на экран массив с умноженными на 2 элементами
+
+2
+В коде первой задачи допишите еще 2 метода:
+
+первый, который печатает массив, начиная с последнего элемента к первому
+второй, который печатает только четные элементы массива
          */
 
         printArray(createArray(4, 5));
@@ -30,6 +36,12 @@ public class Main {
         System.out.println("***** double array *****");
         doubleArray(newArray);
         printArray(newArray);
+
+        System.out.println("***** print from last to first *****");
+        printArrayFromLastToFirst(newArray);
+
+        System.out.println("***** print odd indexes *****");
+        printArrayOddIndexes(newArray);
     }
 
     public static int enterCapacity() {
@@ -50,6 +62,19 @@ public class Main {
             System.out.printf("index %d - %d%n", i, array[i]);
         }
     }
+
+    public static void printArrayFromLastToFirst(int [] array){   // печатает массив, начиная с последнего элемента к первому
+        for (int i = array.length-1; i >= 0 ; i--) {
+            System.out.printf("index %d - %d%n", i, array[i]);
+        }
+    }
+
+public static void printArrayOddIndexes(int [] array){  // печатает только четные элементы массива
+    for (int i = 0; i < array.length; i = i+2) {
+        System.out.printf("index %d - %d%n", i, array[i]);
+    }
+
+}
     public static int[] createArray(int capacity, int start) {
         int[] array = new int[capacity];
         for (int i = 0; i < capacity; i++) {
