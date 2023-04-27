@@ -72,7 +72,7 @@ public class Main {
     }
 
     public static void printArrayOddIndexes(int[] array) {  // печатает только четные элементы массива
-        for (int i = 0; i < array.length; i = i + 2) {
+        for (int i = 0; i < array.length; i = i + 2) {  // i += 2
             System.out.printf("index %d - %d%n", i, array[i]);
         }
 
@@ -89,9 +89,8 @@ public class Main {
 
     public static int[] doubleArray(int[] array) {
         for (int i = 0; i < array.length; i++) {
-            array[i] = array[i] * 2;
+            array[i] = array[i] * 2;      // array[i] *= 2
         }
         return array;
     }
-
 }

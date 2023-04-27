@@ -50,7 +50,7 @@ public class Task3 {
    public static int getMaxNumber (int [] array){
        int res = array[0];
        for (int i = 0; i < array.length; i++) {
-           if (array[i]>=res) {
+           if (array[i]>res) {
                res = array[i];
            }
        }
