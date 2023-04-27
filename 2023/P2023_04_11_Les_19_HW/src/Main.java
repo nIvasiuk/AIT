@@ -5,8 +5,12 @@ public class Main {
         System.out.println("-------- Task 1 -------");
         System.out.println(getMaxIndex(array));
 
-        System.out.println("-------- Task  -------");
+        System.out.println("-------- Task 2 -------");
         System.out.println(getMinIndex(array));
+
+        System.out.println("-------- Task 3 -------");
+        int [] oneNewArray = makeNewArray(array);
+       printArray(oneNewArray);
     }
 
     /*
@@ -52,10 +56,28 @@ public class Main {
         return -1;     // тут не уверенна, что именно надо возвращать.
     }
 
-
     /*
-
 3
-Написать метод, который создает копию исходного массива и в ней меняяет местами максимальный и минимальный элементы
+Написать метод, который создает копию исходного массива и в ней меняет местами максимальный и минимальный элементы
          */
+
+    public static int [] makeNewArray(int [] array){    // int[] array = {1, 8, 0, 80, 145};  max 4,  min 2
+       int maxTemp = getMaxIndex(array);  
+      //  array[maxTemp]
+       int minTemp = getMinIndex(array);
+       // array[minTemp]
+
+        int [] newArray = array;
+        int temp = array[maxTemp]; // сохраняем значение макс
+        newArray[maxTemp] = array[minTemp];
+        newArray[minTemp]=temp;
+        return newArray;
+    }
+
+    public static void printArray(int [] array){
+        for (int i = 0; i < array.length; i++) {
+            System.out.printf("index %d - %d, ", i, array[i]);
+
+        }
+    }
 }
