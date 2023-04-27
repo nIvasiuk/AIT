@@ -18,19 +18,23 @@ public class Main {
 Написать метод, который возвращает ИНДЕКС максимального элемента в массиве
 */
     public static int getMaxIndex(int[] array) {
-        int temp = 0;
-        int j = 0;
-        for (int i = 0; i < array.length; i++) {     // находим максиамальное значение в массиве
-            if (temp < array[i]) {
-                temp = array[i];
+        int tempValue = 0;
+        int tempIndex = 0;
+ //       int j = 0;
+        for (int i = 0; i < array.length; i++) {     // находим максимальное значение в массиве
+            if (tempValue < array[i]) {
+                tempValue = array[i];
+                tempIndex = i;
             }
         }
-        for (j = 0; j < array.length; j++) {       // находим индекс максимального значения в массиве
-            if (temp == array[j]) {
-                return j;
-            }
-        }
-        return -1;     // тут не уверенна, что именно надо возвращать.
+        return tempIndex;
+
+//        for (j = 0; j < array.length; j++) {       // находим индекс максимального значения в массиве
+//            if (tempValue == array[j]) {
+//                return j;
+//            }
+//        }
+//        return -1;     // тут не уверенна, что именно надо возвращать.
     }
 
     /*
@@ -62,7 +66,7 @@ public class Main {
          */
 
     public static int [] makeNewArray(int [] array){    // int[] array = {1, 8, 0, 80, 145};  max 4,  min 2
-       int maxTemp = getMaxIndex(array);  
+       int maxTemp = getMaxIndex(array);
       //  array[maxTemp]
        int minTemp = getMinIndex(array);
        // array[minTemp]
