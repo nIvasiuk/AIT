@@ -18,7 +18,7 @@ public class Main {
 Написать метод, который возвращает ИНДЕКС максимального элемента в массиве
 */
     public static int getMaxIndex(int[] array) {
-        int tempValue = 0;
+        int tempValue = array[0];
         int tempIndex = 0;
  //       int j = 0;
         for (int i = 0; i < array.length; i++) {     // находим максимальное значение в массиве
@@ -43,21 +43,16 @@ public class Main {
 Написать метод, который возвращает ИНДЕКС минимального элемента в массиве
 */
     public static int getMinIndex(int[] array) {
-        int i = 0;
-        int temp = array[i];
-        int j = 0;
+        int tempValue = array[0];
+        int tempIndex = 0;
 
-        for (i = 0; i < array.length; i++) {     // находим минимальное значение в массиве
-            if (temp > array[i]) {
-                temp = array[i];
+        for (int i = 0; i < array.length; i++) {     // находим минимальное значение в массиве
+            if (tempValue > array[i]) {
+                tempValue = array[i];
+                tempIndex = i;
             }
         }
-        for (j = 0; j < array.length; j++) {       // находим индекс минимального значения в массиве
-            if (temp == array[j]) {
-                return j;
-            }
-        }
-        return -1;     // тут не уверенна, что именно надо возвращать.
+       return tempIndex;
     }
 
     /*
