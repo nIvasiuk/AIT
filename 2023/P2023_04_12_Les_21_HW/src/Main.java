@@ -22,13 +22,15 @@ false - если его нету. Метод не должен менять ис
 для параметров {"apple", "orange"}, "banana" --> false;
 */
     public static boolean isItHasWord(String[] arr, String word) {
-        boolean res = false;
+     //   boolean res = false;
         for (int i = 0; i < arr.length; i++) {
             if (arr[i].equalsIgnoreCase(word)) {
-                return res = true;
+                // return res = true;
+                return true;
             }
         }
-        return res;
+      //  return res;
+        return false;
     }
 /*
 Задание 2 *
