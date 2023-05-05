@@ -76,11 +76,14 @@ public class Main {
         }
     }
     public static void printStudentsWithSkipLessons(String[] students, int[] skipLessons) {
+        String [] newArray = new String[students.length];
         for (int i = 0; i < skipLessons.length; i++) {
                 if (skipLessons[i] > 0) {
-                    System.out.println(students[i] + " прогулял " + skipLessons[i] + " занятий");
+                    newArray[i] = students[i] + " прогулял " + skipLessons[i] + " занятий";
+                    System.out.println(newArray[i]);
                 } else {
-                    System.out.println(students[i] + " не прогуливал");
+                    newArray[i] = students[i] + " не прогуливал";
+                    System.out.println(newArray[i]);
                 }
         }
     }
