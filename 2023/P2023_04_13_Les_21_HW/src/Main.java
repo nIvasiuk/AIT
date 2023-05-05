@@ -12,7 +12,7 @@ public class Main {
         System.out.println();
         printStudentsWithSomeSkipLessons(students, skipLessons, 2);
         System.out.println();
-        printStudentsWithSkipLessons(students, skipLessons);
+        printArray(StudentsWithSkipLessons(students, skipLessons));
 
     }
 
@@ -75,17 +75,16 @@ public class Main {
             }
         }
     }
-    public static void printStudentsWithSkipLessons(String[] students, int[] skipLessons) {
+    public static String [] StudentsWithSkipLessons(String[] students, int[] skipLessons) {
         String [] newArray = new String[students.length];
         for (int i = 0; i < skipLessons.length; i++) {
                 if (skipLessons[i] > 0) {
                     newArray[i] = students[i] + " прогулял " + skipLessons[i] + " занятий";
-                    System.out.println(newArray[i]);
-                } else {
+                    } else {
                     newArray[i] = students[i] + " не прогуливал";
-                    System.out.println(newArray[i]);
-                }
+                    }
         }
+        return newArray;
     }
 
     public static String[] getStudentsWithSkipLessons(String[] students, int[] skipLessons) {
