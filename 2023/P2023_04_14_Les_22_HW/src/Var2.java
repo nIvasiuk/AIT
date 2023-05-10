@@ -29,6 +29,7 @@ public class Var2 {
             System.out.println(array[i]);
         }
     }
+
     public static String [] findCharAndReplace(String[] words, char symbol) {
         for (int i = 0; i < words.length; i++) {
             if (isWordEndsByChar(words[i], symbol)) {
@@ -37,6 +38,7 @@ public class Var2 {
         }
         return words;
     }
+
     public static boolean isWordEndsByChar(String word, char symbol) {  // делаем проверку отдельным методом
 
         return word.charAt(word.length() - 1) == symbol;
