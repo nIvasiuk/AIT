@@ -3,7 +3,7 @@ public class Main {
         System.out.println(findLastSymbolInWord("meet"));
         System.out.println();
 
-        String [] drinks = new String[]{"milk", "vine", "beer"};
+        String[] drinks = new String[]{"milk", "vine", "beer"};
         findCharAndReplace(drinks, 'r');
         System.out.println();
         try {
@@ -11,9 +11,8 @@ public class Main {
             System.out.println();
             System.out.println(getElementFromArray(drinks, -1));
             System.out.println();
-          //  System.out.println(getElementFromArray(drinks, 3));
-        }
-        catch (Exception e){
+            //  System.out.println(getElementFromArray(drinks, 3));
+        } catch (Exception e) {
             System.out.println(e.getMessage());
         }
 
@@ -36,6 +35,7 @@ public class Main {
             System.out.println(words[i]);
         }
     }
+
     public static char findLastSymbolInWord(String word) {
         char lastSymbol = 0;
         lastSymbol = word.charAt(word.length() - 1);
@@ -51,11 +51,11 @@ public class Main {
 
     public static String getElementFromArray(String[] array, int numberOfElement) throws Exception {
         String res = "";
-        if (numberOfElement < 0 || numberOfElement > array.length-1){
+        if (numberOfElement < 0 || numberOfElement > array.length - 1) {
             throw new Exception("число меньше нуля или больше длины массива - 1");
         } else {
             for (int i = 0; i < array.length; i++) {
-                if (i == numberOfElement){
+                if (i == numberOfElement) {
                     res = array[i];
                 }
             }
