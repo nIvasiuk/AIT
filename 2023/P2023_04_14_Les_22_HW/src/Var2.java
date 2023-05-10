@@ -52,7 +52,6 @@ public class Var2 {
     public static String getElementFromArray(String[] array, int numberOfElement) throws Exception {
         if (numberOfElement < 0 || numberOfElement > array.length-1){
             throw new Exception("число меньше нуля или больше длины массива - 1");
-        } else {
         }
         return array[numberOfElement];
     }
