@@ -20,7 +20,7 @@ public class Pirate {
 
   @Override
   public String toString() {
-        if (isDrunk == true){
+        if (isDrunk){
             return  name + " " +
                     nickName +
                     ". Hi is drank.";
@@ -39,10 +39,10 @@ public class Pirate {
    */
 
     public void say(Pirate pirate){
-        if (isDrunk == false){
-            System.out.println("It is a bad day");
-        } else {
+        if (isDrunk){
             System.out.println("Yohohoho, what a good life");
+        } else {
+            System.out.println("It is a bad day");
         }
     }
 }

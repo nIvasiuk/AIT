@@ -34,7 +34,7 @@ public class Main {
     }
 
     public static void drink(Pirate pirate){
-        if (pirate.isDrunk == false){
+        if (!pirate.isDrunk){
             pirate.isDrunk = true;
         }
     }
