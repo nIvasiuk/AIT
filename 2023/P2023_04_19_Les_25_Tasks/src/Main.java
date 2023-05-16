@@ -19,24 +19,20 @@ public class Main {
 
         Pirate silver = new Pirate("John", "Silver", false);
         System.out.println(silver);
-        silver.say(silver);
+        silver.say();
         System.out.println("**** pirate takes Rom ****");
-        drink(silver);
-        silver.say(silver);
+        silver.drink();
+        silver.say();
 
         System.out.println();
         Pirate sparrow = new Pirate("Jack", "Sparrow", true);
         System.out.println(sparrow);
-        sparrow.say(sparrow);
+        sparrow.say();
 
 
 
     }
 
-    public static void drink(Pirate pirate){
-        if (!pirate.isDrunk){
-            pirate.isDrunk = true;
-        }
-    }
+
 
 }

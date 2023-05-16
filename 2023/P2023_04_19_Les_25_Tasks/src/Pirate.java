@@ -38,11 +38,17 @@ public class Pirate {
          Создайте несколько пиратов, вызовите метод say
    */
 
-    public void say(Pirate pirate){
+    public void say(){
         if (isDrunk){
             System.out.println("Yohohoho, what a good life");
         } else {
             System.out.println("It is a bad day");
+        }
+    }
+
+    public void drink(){
+        if (!isDrunk){
+            isDrunk = true;
         }
     }
 }
