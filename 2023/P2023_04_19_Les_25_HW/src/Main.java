@@ -1,3 +1,5 @@
+import java.util.ArrayList;
+
 public class Main {
     public static void main(String[] args) {
                /*
@@ -25,6 +27,8 @@ boolean isElectric; - электрическая ли машина.
         System.out.println(mercedes);
         mercedes.drive();
 
+
+
         /*
 
 Задание 2
@@ -34,5 +38,21 @@ boolean isElectric; - электрическая ли машина.
 (используйте для этого промежуточную переменную "аккумулятор") и выведите получившийся результат в консоль.
 Например, для ["Apple", "Orange", "Grape"] должна получится строка "AppleOrangeGrape".
          */
+
+        System.out.println();
+
+        ArrayList <String> cars = new ArrayList<>();
+        cars.add("BMW");
+        cars.add("Tesla");
+        cars.add("Reno");
+
+        String listOfCars = "";
+
+        for (int i = 0; i < cars.size(); i++) {
+            listOfCars += cars.get(i)+" ";
+        }
+
+        System.out.println(listOfCars);
+
     }
 }
