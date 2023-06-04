@@ -1,20 +1,25 @@
 public class RemoteController {
     private TV tv;
 
-    private Channel channel;
-    private Program program;
-
     public RemoteController(TV tv){
         this.tv = tv;
     }
 
+
     /*
     public void on(int channelNumber) - данный метод
-позволит показать (напечатать в консоль) случайную передчу
+позволит показать (напечатать в консоль) случайную передачу
 канала с номером channelNumber
      */
-    public void on(int channelNumber){
+   public void on(int channelNumber){
+    Channel channel = tv.getChannel(channelNumber);
+       if (channel == null){
+          System.err.println("Канал отсутствует");
+          return;
+       }
 
-        System.out.println();
+   Program program = channel.getRandomProgram();
+   System.out.println(program.getName());
+
     }
 }
