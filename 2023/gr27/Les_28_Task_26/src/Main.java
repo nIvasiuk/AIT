@@ -76,6 +76,10 @@ remoteController.on(2)
 
         RemoteController remoteController = new RemoteController(tv);
 
+        tv.addChannel(channelNews);
+        tv.addChannel(channelMusic);
+        tv.addChannel(channelArt);
+
         System.out.println();
         remoteController.on(1);
         remoteController.on(2);
